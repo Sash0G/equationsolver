@@ -26,7 +26,7 @@ def Recognition(img):
         transforms.Normalize(mean=(0.5), std=(0.5))  # Convert the image to a PyTorch tensor
     ])
     model = NeuralNetwork()
-    model.load_state_dict(torch.load('allmodelMain2.pth'))
+    model.load_state_dict(torch.load('EQUATION/allmodelMain2.pth'))
     # img = cv2.bitwise_not(img)
     img = transform(img)
     output=model(img)
